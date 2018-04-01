@@ -1,0 +1,18 @@
+---
+layout: layout
+---
+<style>
+.search-keyword {color: #cf0000;font-weight: bold;}
+#no-match {display: block;}
+#no-match.matched {display: none;}
+</style>
+
+<main id="primary">
+    <div id="search-result"></div>
+    <h1 id="no-match" class="matched"><%= __('no_match') %></h1>
+</main>
+<!-- #primary -->
+<script src="/js/search.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){searchFunc('<%- url_for(config.search.path) %>',getParameterByName('keywords'),'search-result')});
+</script>
