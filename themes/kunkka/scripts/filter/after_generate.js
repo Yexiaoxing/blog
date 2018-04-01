@@ -15,7 +15,7 @@ hexo.extend.filter.register('after_generate',function(){
         hexo.route.remove('js/github-comment.js');
     }
     
-    if(!buttons.base || !buttons.dropdown) {
+    if(!buttons || !buttons.base || !buttons.dropdown) {
         hexo.route.remove('js/buttons.js');
     }
 });
