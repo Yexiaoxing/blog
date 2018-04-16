@@ -43,9 +43,9 @@ In Wikipedia, many examples are provided, but I still want to share some other e
 ### Use modules
 By nature, all modules are singletons because Python will cache the module initialization (the byte-compiled .pyc files)
     
-    > A program doesn't run any faster when it is read from a ‘.pyc’ or ‘.pyo’ file than when it is read from a ‘.py’ file; the only thing that's faster about ‘.pyc’ or ‘.pyo’files is the speed with which they are loaded.
+    A program doesn't run any faster when it is read from a ‘.pyc’ or ‘.pyo’ file than when it is read from a ‘.py’ file; the only thing that's faster about ‘.pyc’ or ‘.pyo’files is the speed with which they are loaded.
     
-    > When a script is run by giving its name on the command line, the bytecode for the script is never written to a ‘.pyc’ or ‘.pyo’ file. Thus, the startup time of a script may be reduced by moving most of its code to a module and having a small bootstrap script that imports that module. It is also possible to name a ‘.pyc’ or ‘.pyo’file directly on the command line.
+    When a script is run by giving its name on the command line, the bytecode for the script is never written to a ‘.pyc’ or ‘.pyo’ file. Thus, the startup time of a script may be reduced by moving most of its code to a module and having a small bootstrap script that imports that module. It is also possible to name a ‘.pyc’ or ‘.pyo’file directly on the command line.
 
 So if we want to quickly make a singleton, modules are your good friend. For example...
 
