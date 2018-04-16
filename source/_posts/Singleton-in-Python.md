@@ -13,7 +13,7 @@ categories:
 Recently, I went through some interviews from big name companies, such as Tencent and Bytedances. In the following posts, I would like to share some knowledge points, one for noting and another for your information.
 
 ## What is Singleton?
-Singleton patterni s a useful software design pattern that restricts the instantiation of a class to oe object. When only one exactly object is needed to use across the system, it becomes useful since it reduces the instantiation time.
+Singleton pattern is a useful software design pattern that restricts the instantiation of a class to oe object. When only one exactly object is needed to use across the system, it becomes useful since it reduces the instantiation time.
 
 A singleton class can and only can have one instance, and it should provide other objects a way to access the instance.
 
@@ -42,7 +42,9 @@ In Wikipedia, many examples are provided, but I still want to share some other e
 
 ### Use modules
 By nature, all modules are singletons because Python will cache the module initialization (the byte-compiled .pyc files)
+    
     > A program doesn't run any faster when it is read from a ‘.pyc’ or ‘.pyo’ file than when it is read from a ‘.py’ file; the only thing that's faster about ‘.pyc’ or ‘.pyo’files is the speed with which they are loaded.
+    
     > When a script is run by giving its name on the command line, the bytecode for the script is never written to a ‘.pyc’ or ‘.pyo’ file. Thus, the startup time of a script may be reduced by moving most of its code to a module and having a small bootstrap script that imports that module. It is also possible to name a ‘.pyc’ or ‘.pyo’file directly on the command line.
 
 So if we want to quickly make a singleton, modules are your good friend. For example...
