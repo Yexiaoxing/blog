@@ -61,6 +61,8 @@ In this tutorial, we will talk about the second part — cert-issuer. We will no
 
 ## Get the source code and Install required packages
 
+Before get started, there is a side note that -- Please use Python 3 in all environments.
+
 You are highly recommended to use virtualenv.
 
   ```bash
