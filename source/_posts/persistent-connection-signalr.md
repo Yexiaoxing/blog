@@ -1,5 +1,5 @@
 ---
-title: Quickstart\: Use Persistent Connections of SignalR in ASP.Net
+title: "Quickstart: Use Persistent Connections of SignalR in ASP.Net"
 date: 2018-01-02 02:22:12
 categories:
   - Tutorials
@@ -48,8 +48,7 @@ tags:
     using Microsoft.Owin;
     using Owin;
 
-    )[assembly: OwinStartup(typeof(WebSocketPerformance.Startup))]
-
+    [assembly: OwinStartup(typeof(WebSocketPerformance.Startup))]
     namespace WebSocketPerformance
     {
         public class Startup
