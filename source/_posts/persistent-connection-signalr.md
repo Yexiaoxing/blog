@@ -1,5 +1,5 @@
 ---
-title: Quickstart: Use Persistent Connections of SignalR in ASP.Net
+title: Quickstart\: Use Persistent Connections of SignalR in ASP.Net
 date: 2018-01-02 02:22:12
 categories:
   - Tutorials
