@@ -85,9 +85,8 @@ archive_generator:
 math:
   engine: 'mathjax' # or 'katex'
   mathjax:
-    src: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.2/MathJax.js'
-    config:
-      # MathJax config
+    css: 'https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css'
+
 
 
 # Deployment
