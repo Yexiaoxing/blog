@@ -44,4 +44,4 @@ It becomes `[-3, 1, 5, 42]`. Amazing.
 
 ### Performance?
 
-### Alternative - `TypedArray.prototype.sort`
+## Alternative - `TypedArray.prototype.sort`
